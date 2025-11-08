@@ -1,0 +1,370 @@
+{
+  "designSystem": {
+    "general": {
+      "name": "Platform Dashboard - Luxury Edition",
+      "description": "An ultra-luxurious, premium admin dashboard design system with rich colors, elegant gradients, and sophisticated visual hierarchy. Features deep, expensive tones with metallic accents, premium shadows, and refined spacing for an exclusive, high-end aesthetic.",
+      "colors": {
+        "primary": "#ed6531",
+        "primaryDark": "#c54d23",
+        "primaryLight": "#ff7e4d",
+        "secondary": "#e9e5dc",
+        "accent": "#d4ff00",
+        "accentDark": "#b8db00",
+        "background": "#1a3b2f",
+        "backgroundLight": "#234a3d",
+        "backgroundDark": "#0f231c",
+        "surface": "#2a5a4a",
+        "surfaceLight": "#3a6a5a",
+        "textPrimary": "#ffffff",
+        "textSecondary": "#e9e5dc",
+        "textTertiary": "#a89f8f",
+        "textDark": "#0f231c",
+        "success": "#4caf50",
+        "warning": "#ff9800",
+        "error": "#f44336",
+        "info": "#2196f3",
+        "gold": "#d4af37",
+        "bronze": "#cd7f32",
+        "gradients": [
+          "linear-gradient(180deg, #ed6531, #e9e5dc)",
+          "linear-gradient(135deg, #ed6531, #ff7e4d)",
+          "linear-gradient(135deg, #1a3b2f, #234a3d)",
+          "linear-gradient(135deg, #d4ff00, #b8db00)",
+          "linear-gradient(135deg, #d4af37, #ffd700)"
+        ]
+      },
+      "typography": {
+        "fontFamily": "Lato, sans-serif",
+        "fontUrl": "https://fonts.google.com/specimen/Lato",
+        "headings": {
+          "h1": {
+            "size": "40px",
+            "weight": 800,
+            "lineHeight": "1.15",
+            "letterSpacing": "-0.03em"
+          },
+          "h2": {
+            "size": "32px",
+            "weight": 700,
+            "lineHeight": "1.2",
+            "letterSpacing": "-0.02em"
+          },
+          "h3": {
+            "size": "24px",
+            "weight": 700,
+            "lineHeight": "1.3",
+            "letterSpacing": "-0.01em"
+          },
+          "h4": { "size": "20px", "weight": 600, "lineHeight": "1.4" }
+        },
+        "body": {
+          "size": "16px",
+          "weight": 400,
+          "lineHeight": "1.6"
+        },
+        "small": {
+          "size": "14px",
+          "weight": 400,
+          "lineHeight": "1.5"
+        },
+        "tiny": {
+          "size": "12px",
+          "weight": 500,
+          "lineHeight": "1.4"
+        }
+      },
+      "spacing": {
+        "unit": "8px",
+        "padding": {
+          "xs": "8px",
+          "small": "12px",
+          "medium": "20px",
+          "large": "32px",
+          "xl": "48px",
+          "2xl": "64px"
+        },
+        "margin": {
+          "xs": "8px",
+          "small": "12px",
+          "medium": "20px",
+          "large": "32px",
+          "xl": "48px",
+          "2xl": "64px"
+        },
+        "gap": {
+          "xs": "8px",
+          "small": "12px",
+          "medium": "16px",
+          "large": "24px",
+          "xl": "32px"
+        }
+      },
+      "borders": {
+        "radius": {
+          "xs": "6px",
+          "small": "10px",
+          "medium": "16px",
+          "large": "20px",
+          "xl": "28px",
+          "2xl": "36px",
+          "pill": "999px"
+        },
+        "width": {
+          "thin": "1px",
+          "medium": "2px",
+          "thick": "3px",
+          "bold": "4px"
+        },
+        "style": "solid",
+        "color": "#3a6a5a",
+        "colorLight": "rgba(233, 229, 220, 0.1)",
+        "colorAccent": "#ed6531"
+      },
+      "shadows": {
+        "subtle": "0 2px 8px rgba(0, 0, 0, 0.15)",
+        "soft": "0 4px 16px rgba(0, 0, 0, 0.2)",
+        "medium": "0 8px 24px rgba(0, 0, 0, 0.25)",
+        "strong": "0 12px 32px rgba(0, 0, 0, 0.3)",
+        "hover": "0 16px 40px rgba(0, 0, 0, 0.35)",
+        "luxury": "0 20px 50px rgba(0, 0, 0, 0.4)",
+        "glow": "0 0 30px rgba(237, 101, 49, 0.3)",
+        "accentGlow": "0 0 30px rgba(212, 255, 0, 0.4)",
+        "inner": "inset 0 2px 8px rgba(0, 0, 0, 0.15)"
+      },
+      "components": {
+        "sidebar": {
+          "width": "280px",
+          "background": "linear-gradient(180deg, #1a3b2f, #0f231c)",
+          "padding": "24px",
+          "borderRight": "1px solid rgba(233, 229, 220, 0.1)",
+          "navigation": {
+            "items": "vertical list with premium icons, refined typography, and smooth transitions",
+            "activeState": "gradient background with accent border and glow effect",
+            "hover": "subtle scale and background highlight with glow"
+          }
+        },
+        "topBar": {
+          "height": "80px",
+          "background": "linear-gradient(90deg, #1a3b2f, #234a3d)",
+          "backdropBlur": "20px",
+          "borderBottom": "1px solid rgba(233, 229, 220, 0.1)",
+          "elements": "premium logo with glow, refined search, notifications badge, user avatar with dropdown"
+        },
+        "card": {
+          "background": "linear-gradient(135deg, #2a5a4a, #234a3d)",
+          "border": "1px solid rgba(233, 229, 220, 0.15)",
+          "borderRadius": "20px",
+          "padding": "28px",
+          "shadow": "luxury",
+          "hover": "elevated shadow with subtle scale and glow",
+          "backdropBlur": "10px"
+        },
+        "chart": {
+          "types": ["line", "bar", "pie", "radial", "candlestick"],
+          "colors": ["#ed6531", "#d4ff00", "#e9e5dc", "#4caf50", "#d4af37"],
+          "grid": "subtle lines with rgba(233, 229, 220, 0.1)",
+          "labels": "refined small text in secondary color",
+          "gradients": "use brand gradients for fills"
+        },
+        "table": {
+          "rowHeight": "64px",
+          "header": "bold, uppercase, tracking-wider, gradient background",
+          "cells": "generous padding, refined typography, hover highlights",
+          "striped": "alternating row colors with subtle transparency",
+          "border": "rgba(233, 229, 220, 0.1)"
+        },
+        "button": {
+          "primary": {
+            "background": "linear-gradient(135deg, #ed6531, #ff7e4d)",
+            "text": "#ffffff",
+            "borderRadius": "16px",
+            "padding": "14px 32px",
+            "shadow": "glow",
+            "hover": "elevated shadow with scale",
+            "fontWeight": "700"
+          },
+          "secondary": {
+            "background": "transparent",
+            "border": "2px solid #ed6531",
+            "text": "#ed6531",
+            "borderRadius": "16px",
+            "padding": "14px 32px",
+            "hover": "background gradient with glow"
+          },
+          "accent": {
+            "background": "linear-gradient(135deg, #d4ff00, #b8db00)",
+            "text": "#0f231c",
+            "borderRadius": "16px",
+            "padding": "14px 32px",
+            "shadow": "accentGlow",
+            "fontWeight": "800"
+          }
+        },
+        "input": {
+          "background": "rgba(42, 90, 74, 0.5)",
+          "border": "1px solid rgba(233, 229, 220, 0.2)",
+          "borderRadius": "12px",
+          "padding": "14px 20px",
+          "focus": "border-accent with glow",
+          "placeholder": "#a89f8f"
+        },
+        "badge": {
+          "borderRadius": "12px",
+          "padding": "6px 14px",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "shadow": "subtle"
+        },
+        "icon": {
+          "size": "24px",
+          "color": "#e9e5dc",
+          "hover": "#d4ff00 with subtle glow",
+          "active": "#ed6531"
+        }
+      },
+      "layout": {
+        "structure": "Fixed luxury sidebar on left with gradient, main content area with refined spacing and premium card-based layouts",
+        "background": "dark gradient (#1a3b2f) with subtle patterns",
+        "responsive": "Mobile: bottom navigation bar, tablet: collapsible sidebar, desktop: full sidebar",
+        "sections": [
+          "Inbox with multi-channel messaging",
+          "Calendar with session management",
+          "Client profiles with progress tracking",
+          "AI Bot automation",
+          "Profile & settings",
+          "Analytics dashboard",
+          "Payments & invoicing",
+          "Micro-website builder"
+        ],
+        "maxWidth": "1920px",
+        "contentPadding": "32px",
+        "gaps": "24px between elements"
+      },
+      "animations": {
+        "transitions": "0.4s cubic-bezier(0.4, 0, 0.2, 1) for smooth, premium feel",
+        "hover": "scale(1.02) with shadow expansion",
+        "load": "fade-in with slide-up for elegant entrance",
+        "pageTransition": "smooth fade with blur",
+        "duration": {
+          "fast": "0.2s",
+          "normal": "0.4s",
+          "slow": "0.6s"
+        }
+      }
+    },
+    "microWebsite": {
+      "name": "Micro-Website Design",
+      "description": "A vibrant, vertical-scrolling micro-website design system for promotional or service-based sites, emphasizing hero sections, pricing cards, testimonials, and call-to-actions. Uses bold colors, imagery placeholders, and mobile-first layouts.",
+      "colors": {
+        "primary": "#ed6531",
+        "secondary": "#e9e5dc",
+        "text": "#000",
+        "background": "#1a3b2f",
+        "accent": "#d4ff00",
+        "success": "#4caf50",
+        "gradients": ["linear-gradient(180deg, #ed6531, #e9e5dc)"]
+      },
+      "typography": {
+        "fontFamily": "Lato, sans-serif",
+        "fontUrl": "https://fonts.google.com/specimen/Lato",
+        "headings": {
+          "h1": { "size": "40px", "weight": 800, "lineHeight": "1.1" },
+          "h2": { "size": "28px", "weight": 700, "lineHeight": "1.2" },
+          "h3": { "size": "22px", "weight": 600, "lineHeight": "1.3" }
+        },
+        "body": {
+          "size": "18px",
+          "weight": 400,
+          "lineHeight": "1.6"
+        },
+        "small": {
+          "size": "14px",
+          "weight": 400,
+          "lineHeight": "1.4"
+        }
+      },
+      "spacing": {
+        "unit": "16px",
+        "padding": {
+          "small": "16px",
+          "medium": "32px",
+          "large": "48px"
+        },
+        "margin": {
+          "small": "16px",
+          "medium": "32px",
+          "large": "48px"
+        }
+      },
+      "borders": {
+        "radius": {
+          "small": "12px",
+          "medium": "20px",
+          "large": "32px",
+          "pill": "999px"
+        },
+        "width": "0",
+        "style": "none"
+      },
+      "shadows": {
+        "soft": "0 4px 16px rgba(0, 0, 0, 0.2)",
+        "medium": "0 8px 24px rgba(0, 0, 0, 0.25)",
+        "hover": "0 12px 32px rgba(0, 0, 0, 0.3)"
+      },
+      "components": {
+        "hero": {
+          "background": "dark with overlay",
+          "elements": "large heading, subtext, primary button, image placeholder"
+        },
+        "section": {
+          "padding": "large vertical",
+          "layout": "centered text with side images or cards"
+        },
+        "pricingCard": {
+          "background": "light accent",
+          "borderRadius": "large",
+          "padding": "medium",
+          "elements": "title, price, features list, button"
+        },
+        "testimonial": {
+          "layout": "quote text, author name, image placeholder",
+          "background": "transparent or light"
+        },
+        "button": {
+          "primary": {
+            "background": "primary color",
+            "text": "text color",
+            "borderRadius": "pill",
+            "padding": "12px 24px",
+            "fontWeight": "bold"
+          },
+          "secondary": {
+            "background": "secondary color",
+            "text": "primary color",
+            "border": "none"
+          }
+        },
+        "footer": {
+          "background": "dark",
+          "elements": "links, copyright, quick links columns"
+        }
+      },
+      "layout": {
+        "structure": "Full-width vertical scrolling sections, mobile-optimized with stacked elements",
+        "responsive": "Single column on mobile, potential side-by-side on desktop",
+        "sections": [
+          "Hero banner",
+          "Features/programs",
+          "Pricing packages",
+          "Testimonials",
+          "Call-to-action",
+          "Footer"
+        ]
+      },
+      "animations": {
+        "transitions": "0.4s ease for button hovers and section reveals",
+        "scroll": "parallax or fade-in on scroll"
+      }
+    }
+  }
+}

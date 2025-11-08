@@ -1,0 +1,22 @@
+# robots.txt for FitSalmon
+User-agent: *
+Allow: /
+Allow: /demo
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://fitsalmon.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 0
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
