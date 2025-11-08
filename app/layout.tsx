@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const lato = Lato({
   weight: ["300", "400", "700", "900"],
@@ -81,6 +82,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <Analytics />
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
