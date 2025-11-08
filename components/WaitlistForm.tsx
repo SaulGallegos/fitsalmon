@@ -3,7 +3,7 @@
 import { useState, FormEvent } from 'react';
 
 interface WaitlistFormProps {
-    variant?: 'hero' | 'cta' | 'nav';
+    variant?: 'hero' | 'cta' | 'nav' | 'pricing';
 }
 
 export default function WaitlistForm({ variant = 'hero' }: WaitlistFormProps) {
@@ -81,8 +81,11 @@ export default function WaitlistForm({ variant = 'hero' }: WaitlistFormProps) {
                         </svg>
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-3">¿Interesado en la Pre-Venta?</h3>
-                    <p className="text-[#e9e5dc] leading-relaxed">
-                        Asegura <span className="text-[#d4ff00] font-bold">50% de descuento los primeros 6 meses</span> y acceso prioritario al lanzamiento.
+                    <p className="text-[#e9e5dc] leading-relaxed mb-4">
+                        Asegura <span className="text-[#d4ff00] font-bold">50% de descuento todo tu primer año</span> y acceso prioritario al lanzamiento.
+                    </p>
+                    <p className="text-[#a89f8f] text-sm">
+                        💳 Solo pagas tu primer mes por adelantado (350 o 700 MXN) y disfrutas 12 meses al 50%
                     </p>
                 </div>
 
@@ -156,6 +159,45 @@ export default function WaitlistForm({ variant = 'hero' }: WaitlistFormProps) {
                             className={`mt-4 p-4 rounded-xl backdrop-blur-md text-center font-semibold ${success
                                 ? 'bg-white/20 text-white border border-white/30'
                                 : 'bg-white/20 text-white border border-white/30'
+                                }`}
+                        >
+                            {message}
+                        </div>
+                    )}
+                </div>
+                {showPresellPopup && <PresellPopup />}
+            </>
+        );
+    }
+
+    // Pricing variant - styled for pricing section
+    if (variant === 'pricing') {
+        return (
+            <>
+                <div className="w-full max-w-xl mx-auto">
+                    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
+                        <input
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder="tu@email.com"
+                            required
+                            disabled={loading || success}
+                            className="flex-1 px-6 py-4 bg-[#2a5a4a]/50 border-2 border-[#e9e5dc]/30 rounded-xl text-white text-base placeholder-[#a89f8f] focus:outline-none focus:border-[#ed6531] focus:bg-[#2a5a4a]/70 transition-all duration-300 backdrop-blur-sm disabled:opacity-50"
+                        />
+                        <button
+                            type="submit"
+                            disabled={loading || success}
+                            className="px-8 py-4 bg-gradient-to-r from-[#ed6531] to-[#ff7e4d] text-white text-base font-extrabold rounded-xl shadow-[0_8px_24px_rgba(237,101,49,0.4)] hover:shadow-[0_12px_32px_rgba(237,101,49,0.5)] hover:scale-105 transition-all duration-400 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 whitespace-nowrap"
+                        >
+                            {loading ? 'Enviando...' : success ? '✓ ¡Registrado!' : 'Únete Ahora'}
+                        </button>
+                    </form>
+                    {message && (
+                        <div
+                            className={`mt-4 p-4 rounded-xl backdrop-blur-sm text-center text-sm font-semibold ${success
+                                ? 'bg-[#4caf50]/20 text-[#d4ff00] border border-[#4caf50]/30'
+                                : 'bg-[#ed6531]/20 text-[#ff7e4d] border border-[#ed6531]/30'
                                 }`}
                         >
                             {message}

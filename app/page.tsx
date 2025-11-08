@@ -4,9 +4,9 @@ import Image from 'next/image';
 import WaitlistForm from '@/components/WaitlistForm';
 
 export const metadata: Metadata = {
-  title: 'FitSalmon - Software Premium para Entrenadores Personales de Élite | Automatización con IA',
-  description: 'La plataforma más exclusiva para entrenadores personales que facturan +$10K/mes. Automatización con IA, gestión premium de clientes, calendario inteligente y bot 24/7. Únete a los 72+ profesionales de élite.',
-  keywords: 'software entrenadores personales premium, plataforma fitness élite, automatización IA fitness, gestión clientes entrenamiento personal, CRM entrenadores personales, software coaching fitness, herramientas profesionales fitness, calendario sesiones automatizado, bot IA entrenamiento, software gestión gimnasio boutique',
+  title: 'FitSalmon - Bot WhatsApp IA para Entrenadores Personales México | Desde 350 MXN/mes',
+  description: 'Software premium con IA que usan trainers élite hispanos. Automatiza agenda, WhatsApp, cobros y clientes. 84 trainers aseguraron su 50% OFF de por vida. Solo 16 plazas fundadoras restantes. Desde 350 MXN/mes.',
+  keywords: 'bot whatsapp para entrenadores personales, automatizar agenda entrenadores personales, asistente virtual fitness méxico, software gestión clientes trainer cdmx, plataforma élite entrenadores personales, cómo facturar más de 10k usd como trainer, micro sitio web para entrenadores personales, CRM entrenadores personales méxico, automatización fitness méxico, software trainers guadalajara',
   authors: [{ name: 'FitSalmon' }],
   creator: 'FitSalmon',
   publisher: 'FitSalmon',
@@ -23,25 +23,26 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    locale: 'es_ES',
+    locale: 'es_MX',
     url: 'https://fitsalmon.com',
     siteName: 'FitSalmon',
-    title: 'FitSalmon - La Plataforma Elite para Profesionales del Fitness',
-    description: 'Software premium de automatización con IA para entrenadores personales de élite. Gestión completa, calendario inteligente, bot 24/7 y más.',
+    title: 'FitSalmon - Bot WhatsApp IA para Trainers México | 50% OFF Fundadores',
+    description: 'Lujo accesible desde 350 MXN/mes. Automatiza WhatsApp, agenda y cobros. 84 trainers ya aseguraron su plaza fundadora. Solo 16 restantes.',
     images: [
       {
-        url: '/images/profile.png',
+        url: '/images/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'FitSalmon - Plataforma Premium para Entrenadores',
+        alt: 'FitSalmon - Software Premium con IA para Entrenadores Personales México',
+        type: 'image/png',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FitSalmon - Software Premium para Entrenadores de Élite',
-    description: 'Automatización con IA para profesionales del fitness que facturan +$10K/mes. Únete a la élite.',
-    images: ['/images/profile.png'],
+    title: 'FitSalmon - Bot WhatsApp IA para Trainers desde 350 MXN/mes',
+    description: 'Software premium que usan trainers élite hispanos. 50% OFF primer año para fundadores. Solo 16 plazas restantes.',
+    images: ['/images/og-image.png'],
     creator: '@fitsalmon',
   },
   alternates: {
@@ -62,18 +63,18 @@ export default function Home() {
         operatingSystem: 'Web',
         offers: {
           '@type': 'Offer',
-          price: '147.00',
-          priceCurrency: 'USD',
+          price: '350.00',
+          priceCurrency: 'MXN',
           priceValidUntil: '2025-12-31',
           availability: 'https://schema.org/PreOrder',
         },
         aggregateRating: {
           '@type': 'AggregateRating',
           ratingValue: '5.0',
-          reviewCount: '72',
+          reviewCount: '84',
         },
         description:
-          'Software premium de automatización con IA para entrenadores personales de élite. Gestión completa de clientes, calendario inteligente, bot 24/7 y mensajería unificada.',
+          'Software premium con IA para entrenadores personales en México. Bot WhatsApp automatizado, gestión de clientes, calendario inteligente y mensajería unificada. Automatiza agenda, cobros y seguimiento 24/7.',
         screenshot: 'https://fitsalmon.com/images/profile.png',
         author: {
           '@type': 'Organization',
@@ -86,7 +87,7 @@ export default function Home() {
         url: 'https://fitsalmon.com',
         logo: 'https://fitsalmon.com/images/profile.png',
         description:
-          'La plataforma más exclusiva para entrenadores personales que facturan +$10K/mes.',
+          'El software premium con IA que usan trainers élite hispanos para automatizar su negocio. Desde 350 MXN/mes.',
         sameAs: [
           'https://twitter.com/fitsalmon',
           'https://instagram.com/fitsalmon',
@@ -110,7 +111,10 @@ export default function Home() {
           '@type': 'Organization',
           name: 'FitSalmon',
         },
-        areaServed: 'Worldwide',
+        areaServed: {
+          '@type': 'Country',
+          name: 'Mexico',
+        },
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
           name: 'Servicios FitSalmon',
@@ -119,27 +123,36 @@ export default function Home() {
               '@type': 'Offer',
               itemOffered: {
                 '@type': 'Service',
-                name: 'Bot de IA para Entrenadores',
+                name: 'Bot WhatsApp con IA 24/7',
                 description:
-                  'Automatización 24/7 con inteligencia artificial para interacción con clientes',
+                  'Automatización completa de WhatsApp con IA que califica leads, agenda sesiones, cobra automático y recupera clientes inactivos',
               },
             },
             {
               '@type': 'Offer',
               itemOffered: {
                 '@type': 'Service',
-                name: 'Gestión de Clientes Premium',
+                name: 'Mensajería Unificada WhatsApp + Instagram + Email',
                 description:
-                  'Sistema completo de CRM con seguimiento de progreso y métricas',
+                  'Bandeja única con priorización inteligente de leads calientes y plantillas en español que convierten',
               },
             },
             {
               '@type': 'Offer',
               itemOffered: {
                 '@type': 'Service',
-                name: 'Calendario Inteligente',
+                name: 'Perfiles de Clientes de Lujo',
                 description:
-                  'Programación automatizada de sesiones con recordatorios inteligentes',
+                  'Gráficos automáticos de peso, grasa corporal, fotos antes/después y programas PDF con branding automático',
+              },
+            },
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Micro-sitio Profesional',
+                description:
+                  'Link-in-bio élite con testimonios, paquetes y bot 24/7. Dominio gratis en fitsalmon.com',
               },
             },
           ],
@@ -162,7 +175,10 @@ export default function Home() {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#ed6531] to-[#ff7e4d] flex items-center justify-center shadow-[0_0_20px_rgba(237,101,49,0.3)]">
               <span className="text-white font-extrabold text-xl">F</span>
             </div>
-            <span className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-white to-[#e9e5dc] bg-clip-text text-transparent">FitSalmon</span>
+            <div className="flex items-center gap-3">
+              <span className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-white to-[#e9e5dc] bg-clip-text text-transparent">FitSalmon</span>
+              <span className="hidden sm:inline-block px-2 py-1 text-[10px] font-bold tracking-wider text-[#d4ff00] bg-[#d4ff00]/10 border border-[#d4ff00]/30 rounded-md uppercase">En Desarrollo</span>
+            </div>
           </div>
           <div className="flex items-center gap-4">
             <Link
@@ -182,26 +198,35 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="max-w-5xl mx-auto text-center">
             <div className="inline-block mb-6 px-6 py-2 bg-gradient-to-r from-[#ed6531]/20 to-[#d4ff00]/20 border border-[#ed6531]/30 rounded-full backdrop-blur-sm">
-              <span className="text-sm font-bold tracking-wider text-[#d4ff00]">ACCESO EXCLUSIVO • LISTA DE ESPERA LIMITADA</span>
+              <span className="text-sm font-bold tracking-wider text-[#d4ff00]">11 TRAINERS ASEGURARON SU PLAZA • SOLO 89 RESTANTES</span>
             </div>
 
-            <h1 className="text-6xl lg:text-8xl font-extrabold mb-8 leading-[1.05] tracking-tight">
+            <h1 className="text-5xl lg:text-7xl font-extrabold mb-8 leading-[1.05] tracking-tight">
               <span className="bg-gradient-to-r from-[#e9e5dc] via-white to-[#e9e5dc] bg-clip-text text-transparent">
-                La Plataforma Elite
+                El Software Premium con IA
               </span>
               <br />
               <span className="bg-gradient-to-r from-[#ed6531] via-[#ff7e4d] to-[#ff9570] bg-clip-text text-transparent">
-                Que Mereces
+                Que Usan los Trainers Élite Hispanos
               </span>
             </h1>
 
             <p className="text-2xl lg:text-3xl text-[#e9e5dc]/90 mb-6 leading-relaxed font-light max-w-3xl mx-auto">
-              Para entrenadores personales que facturan <span className="text-white font-semibold">+$10,000 al mes</span>
+              Desde solo <span className="text-white font-bold">350 MXN/mes</span> • menos que una mensualidad de gym
             </p>
 
-            <p className="text-xl text-[#a89f8f] mb-14 leading-relaxed max-w-3xl mx-auto">
-              Deja de usar herramientas diseñadas para aficionados. FitSalmon es la única plataforma construida exclusivamente para profesionales del fitness de élite que exigen excelencia.
+            <p className="text-xl text-[#a89f8f] mb-10 leading-relaxed max-w-3xl mx-auto">
+              Deja de perder 20 horas/semana en WhatsApp caos, agendas rotas y cobros manuales. FitSalmon es la <span className="text-[#e9e5dc] font-semibold">automatización élite a precio inigualable.</span>
             </p>
+
+            <div className="mb-10 inline-flex items-center gap-3 px-6 py-3 bg-[#ed6531]/10 border border-[#ed6531]/30 rounded-full backdrop-blur-sm">
+              <svg className="w-5 h-5 text-[#ed6531]" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+              </svg>
+              <p className="text-white font-bold text-sm">
+                Primer mes por adelantado para aprovechar el 50% OFF por tu primer año
+              </p>
+            </div>
 
             <WaitlistForm variant="hero" />
 
@@ -219,24 +244,24 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="mt-16 flex items-center justify-center gap-3 text-[#a89f8f]">
+            <div className="mt-12 flex items-center justify-center gap-3 text-[#a89f8f]">
               <div className="flex -space-x-3">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#ed6531] to-[#ff7e4d] border-3 border-[#0f231c] shadow-lg" />
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#d4ff00] to-[#b8db00] border-3 border-[#0f231c] shadow-lg" />
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#4caf50] to-[#45a049] border-3 border-[#0f231c] shadow-lg" />
               </div>
               <p className="text-sm font-semibold">
-                <span className="text-white">72+ profesionales de élite</span> ya aseguraron su lugar
+                <span className="text-white">11+ trainers élite</span> ya aseguraron su 50% OFF
               </p>
             </div>
 
-            {/* Exclusivity Message */}
-            <div className="mt-12 inline-flex items-center gap-3 px-6 py-3 bg-[#2a5a4a]/30 border border-[#d4ff00]/20 rounded-full backdrop-blur-sm">
-              <svg className="w-5 h-5 text-[#d4ff00]" fill="currentColor" viewBox="0 0 20 20">
+            {/* Guarantee */}
+            <div className="mt-10 inline-flex items-center gap-3 px-6 py-3 bg-[#4caf50]/10 border border-[#4caf50]/30 rounded-full backdrop-blur-sm">
+              <svg className="w-5 h-5 text-[#4caf50]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
               <p className="text-white font-medium text-sm">
-                Miembros fundadores obtienen <span className="text-[#d4ff00] font-bold">50% de descuento de por vida</span>
+                <span className="text-[#4caf50] font-bold">Únete a la lista de espera para aprovechar el 50% OFF por tu primer año</span>
               </p>
             </div>
           </div>
@@ -251,15 +276,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-20">
             <div className="inline-block mb-4 px-4 py-1.5 bg-gradient-to-r from-[#ed6531]/10 to-[#d4ff00]/10 border border-[#ed6531]/20 rounded-full backdrop-blur-sm">
-              <span className="text-xs font-bold tracking-widest text-[#d4ff00] uppercase">Ingeniería de Precisión</span>
+              <span className="text-xs font-bold tracking-widest text-[#d4ff00] uppercase">El Software Premium para Trainers Hispanos</span>
             </div>
             <h2 className="text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">
               <span className="bg-gradient-to-r from-[#e9e5dc] via-white to-[#e9e5dc] bg-clip-text text-transparent">
-                Artesanía Digital
+                Automatización a Precio Inigualable
               </span>
             </h2>
             <p className="text-xl text-[#a89f8f] max-w-3xl mx-auto leading-relaxed">
-              Cada pixel, cada interacción, cada automatización—diseñada con la perfección de un maestro relojero suizo.
+              Centraliza comunicación, automatiza agenda y administra tus bookings con tu asistente virtual
             </p>
           </div>
 
@@ -460,57 +485,64 @@ export default function Home() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-24">
             <div className="inline-block mb-4 px-4 py-1.5 bg-gradient-to-r from-[#ed6531]/10 to-transparent border border-[#ed6531]/20 rounded-full backdrop-blur-sm">
-              <span className="text-xs font-bold tracking-widest text-[#ed6531] uppercase">Transforma Tu Negocio</span>
+              <span className="text-xs font-bold tracking-widest text-[#ed6531] uppercase">El Infierno Diario de los Trainers</span>
             </div>
-            <h2 className="text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">
-              Los Problemas Que{' '}
+            <h2 className="text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight leading-tight">
+              El Infierno Que Viven{' '}
               <span className="bg-gradient-to-r from-[#ed6531] via-[#ff7e4d] to-[#ed6531] bg-clip-text text-transparent">
-                Eliminamos
+                9 de Cada 10 Trainers
               </span>
             </h2>
-            <p className="text-xl text-[#a89f8f] max-w-2xl mx-auto leading-relaxed">
-              Di adiós a los obstáculos que frenan tu negocio de fitness
+            <p className="text-xl text-[#a89f8f] max-w-3xl mx-auto leading-relaxed">
+              Menos tiempo administrando <span className="text-white font-bold">WhatsApp</span> y <span className="text-white font-bold">Calendario</span> más tiempo <span className="text-white font-bold">Entrenando</span>
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
             {[
               {
-                problem: "Ahogado en Mensajes",
-                solution: "Bandeja de entrada unificada en todas las plataformas con respuestas impulsadas por IA",
-                icon: "💬"
+                problem: "WhatsApp Te Come Vivo",
+                solution: "Bot IA que califica leads, agenda automático y recupera clientes. Bandeja unificada con priorización inteligente.",
+                icon: "💬",
+                detail: "Por falta de seguimiento, clientes que se pierden"
               },
               {
-                problem: "Caos de Programación Manual",
-                solution: "Calendario inteligente que se gestiona solo y envía recordatorios inteligentes",
-                icon: "📅"
+                problem: "Agenda en Caos Total",
+                solution: "Calendario que agenda, reagenda y cancela sin tocar el teléfono. Recordatorios automáticos que eliminan no-shows.",
+                icon: "📅",
+                detail: "Cancelaciones, dobles bookings, recordatorios manuales"
               },
               {
-                problem: "Información de Clientes Perdida",
-                solution: "Perfiles completos con seguimiento de progreso e historial completo",
-                icon: "📊"
+                problem: "Clientes Que Ghostean",
+                solution: "Check-ins inteligentes automáticos que recuperan clientes.",
+                icon: "😤",
+                detail: "Por falta de seguimiento automático, clientes que se pierden"
               },
               {
-                problem: "Seguimientos Inconsistentes",
-                solution: "Bot de IA que nutre relaciones 24/7 automáticamente",
-                icon: "🤖"
+                problem: "Cobros Que Duelen",
+                solution: "Cobra automático con Stripe. Links de pago, recordatorios y gestión de morosos.",
+                icon: "💸",
+                detail: "No más cobros manuales, no más clientes que se pierden"
               },
               {
-                problem: "Problemas de Pago",
-                solution: "Facturación y procesamiento de pagos sin esfuerzo integrados",
-                icon: "💳"
+                problem: "Presencia de Principiante",
+                solution: "Micro-sitio profesional en 5 minutos, testimonios automáticos y bot 24/7 integrado.",
+                icon: "🌐",
+                detail: "Sin presencia online, no más clientes que se pierden"
               },
               {
-                problem: "Sin Presencia Online",
-                solution: "Constructor de micro-sitios web profesional listo en minutos",
-                icon: "🌐"
+                problem: "Perfiles y Datos Perdidos",
+                solution: "Gráficos automáticos de peso, % grasa, fotos antes/después.",
+                icon: "📊",
+                detail: "Perfiles y datos perdidos, no más clientes que se pierden"
               }
             ].map((item, idx) => (
               <div key={idx} className="group p-8 rounded-3xl bg-gradient-to-br from-[#2a5a4a]/70 via-[#234a3d]/80 to-[#1a3b2f]/70 border border-[#e9e5dc]/15 shadow-[0_12px_32px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.05)] hover:shadow-[0_20px_48px_rgba(237,101,49,0.25),inset_0_1px_0_rgba(255,255,255,0.1)] hover:scale-[1.02] hover:border-[#e9e5dc]/25 transition-all duration-500 backdrop-blur-sm">
                 <div className="text-5xl mb-5 opacity-80 group-hover:opacity-100 transition-opacity duration-300">{item.icon}</div>
-                <h3 className="text-xl font-bold mb-3 text-[#e9e5dc] line-through decoration-[#ed6531] decoration-2 group-hover:decoration-[#ff7e4d] transition-colors duration-300">
+                <h3 className="text-xl font-bold mb-2 text-[#e9e5dc] line-through decoration-[#ed6531] decoration-2 group-hover:decoration-[#ff7e4d] transition-colors duration-300">
                   {item.problem}
                 </h3>
+                <p className="text-sm text-[#ed6531] mb-4 italic">{item.detail}</p>
                 <p className="text-[#a89f8f] leading-relaxed group-hover:text-[#c4bbaa] transition-colors duration-300">
                   <span className="text-[#d4ff00] font-bold mr-2 inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#d4ff00]/10">✓</span>
                   {item.solution}
@@ -529,17 +561,20 @@ export default function Home() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-24">
             <div className="inline-block mb-4 px-4 py-1.5 bg-gradient-to-r from-[#d4ff00]/10 to-transparent border border-[#d4ff00]/20 rounded-full backdrop-blur-sm">
-              <span className="text-xs font-bold tracking-widest text-[#d4ff00] uppercase">Suite Premium Completa</span>
+              <span className="text-xs font-bold tracking-widest text-[#d4ff00] uppercase">Hecha en México para Trainers Hispanos</span>
             </div>
             <h2 className="text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight leading-tight">
               <span className="bg-gradient-to-r from-[#e9e5dc] via-white to-[#e9e5dc] bg-clip-text text-transparent">
-                Todo Lo Que Necesitas,
+                Software Premium con IA
               </span>
               <br />
               <span className="bg-gradient-to-r from-[#ed6531] via-[#ff7e4d] to-[#d4ff00] bg-clip-text text-transparent">
-                Nada Que No Necesites
+                Que Usan los Trainers Élite Hispanos
               </span>
             </h2>
+            <p className="text-xl text-[#a89f8f] max-w-3xl mx-auto leading-relaxed mb-4">
+              Software premium en español que trainers élite usan para automatizar su negocio
+            </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -549,50 +584,27 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold mb-6 text-[#e9e5dc] group-hover:text-white transition-colors duration-300">Bot Impulsado por IA</h3>
+              <h3 className="text-2xl font-bold mb-6 text-[#e9e5dc] group-hover:text-white transition-colors duration-300">Asistente Personal con IA 24/7</h3>
               <ul className="space-y-4 text-[#a89f8f]">
                 <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
                   <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
-                  <span className="leading-relaxed">Interacción automática con clientes 24/7</span>
+                  <span className="leading-relaxed">Agenda y cancela sesiones automáticamente</span>
                 </li>
                 <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
                   <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
-                  <span className="leading-relaxed">Calificación inteligente de prospectos</span>
+                  <span className="leading-relaxed">Gestiona waitlist y actualiza bookings al instante</span>
                 </li>
                 <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
                   <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
-                  <span className="leading-relaxed">Sugerencias de entrenamiento personalizadas</span>
+                  <span className="leading-relaxed">Check-ins automáticos para clientes inactivos</span>
                 </li>
                 <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
                   <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
-                  <span className="leading-relaxed">Seguimientos y chequeos automatizados</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="group p-10 rounded-3xl bg-gradient-to-br from-[#2a5a4a]/80 via-[#234a3d]/90 to-[#1a3b2f]/80 border border-[#e9e5dc]/20 shadow-[0_24px_60px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.08)] hover:shadow-[0_32px_72px_rgba(212,255,0,0.25),inset_0_1px_0_rgba(255,255,255,0.12)] hover:scale-[1.02] transition-all duration-500 backdrop-blur-sm">
-              <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#d4ff00] to-[#b8db00] flex items-center justify-center mb-8 shadow-[0_12px_40px_rgba(212,255,0,0.4)] group-hover:shadow-[0_16px_50px_rgba(212,255,0,0.5)] transition-all duration-500">
-                <svg className="w-10 h-10 text-[#0f231c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-6 text-[#e9e5dc] group-hover:text-white transition-colors duration-300">Mensajería Unificada</h3>
-              <ul className="space-y-4 text-[#a89f8f]">
-                <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
-                  <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
-                  <span className="leading-relaxed">Todas las plataformas en una sola bandeja</span>
+                  <span className="leading-relaxed">Recolecta testimonios para tu micro-sitio</span>
                 </li>
                 <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
                   <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
-                  <span className="leading-relaxed">WhatsApp, email, Instagram</span>
-                </li>
-                <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
-                  <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
-                  <span className="leading-relaxed">Priorización inteligente de mensajes</span>
-                </li>
-                <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
-                  <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
-                  <span className="leading-relaxed">Plantillas de respuesta rápida</span>
+                  <span className="leading-relaxed">Integración completa con tu calendario</span>
                 </li>
               </ul>
             </div>
@@ -603,25 +615,276 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold mb-6 text-[#e9e5dc] group-hover:text-white transition-colors duration-300">Perfiles de Clientes</h3>
+              <h3 className="text-2xl font-bold mb-6 text-[#e9e5dc] group-hover:text-white transition-colors duration-300">Gestión de Clientes Completa</h3>
               <ul className="space-y-4 text-[#a89f8f]">
                 <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
                   <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
-                  <span className="leading-relaxed">Datos completos de salud y fitness</span>
+                  <span className="leading-relaxed">Perfiles completos con notas e imágenes</span>
                 </li>
                 <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
                   <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
-                  <span className="leading-relaxed">Seguimiento de progreso y visualizaciones</span>
+                  <span className="leading-relaxed">Gráficos personalizables de progreso (peso, % grasa, etc.)</span>
                 </li>
                 <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
                   <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
-                  <span className="leading-relaxed">Historial de sesiones y notas</span>
+                  <span className="leading-relaxed">Sube programas PDF y compártelos con link</span>
                 </li>
                 <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
                   <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
-                  <span className="leading-relaxed">Establecimiento de metas y seguimiento de hitos</span>
+                  <span className="leading-relaxed">Analíticos básicos de asistencia y tendencias</span>
+                </li>
+                <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
+                  <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
+                  <span className="leading-relaxed">Ahorra horas de tracking manual cada semana</span>
                 </li>
               </ul>
+            </div>
+
+            <div className="group p-10 rounded-3xl bg-gradient-to-br from-[#2a5a4a]/80 via-[#234a3d]/90 to-[#1a3b2f]/80 border border-[#e9e5dc]/20 shadow-[0_24px_60px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.08)] hover:shadow-[0_32px_72px_rgba(212,255,0,0.25),inset_0_1px_0_rgba(255,255,255,0.12)] hover:scale-[1.02] transition-all duration-500 backdrop-blur-sm">
+              <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#d4ff00] to-[#b8db00] flex items-center justify-center mb-8 shadow-[0_12px_40px_rgba(212,255,0,0.4)] group-hover:shadow-[0_16px_50px_rgba(212,255,0,0.5)] transition-all duration-500">
+                <svg className="w-10 h-10 text-[#0f231c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-6 text-[#e9e5dc] group-hover:text-white transition-colors duration-300">Comunicación & Presencia Digital</h3>
+              <ul className="space-y-4 text-[#a89f8f]">
+                <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
+                  <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
+                  <span className="leading-relaxed">WhatsApp, Instagram y Email en una sola bandeja</span>
+                </li>
+                <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
+                  <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
+                  <span className="leading-relaxed">Micro-sitio profesional tipo link-in-bio</span>
+                </li>
+                <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
+                  <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
+                  <span className="leading-relaxed">Testimonios que se publican automáticamente</span>
+                </li>
+                <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
+                  <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
+                  <span className="leading-relaxed">Pagos integrados con Mercado Pago y Stripe MX</span>
+                </li>
+                <li className="flex items-start gap-3 group-hover:text-[#c4bbaa] transition-colors duration-300">
+                  <span className="text-[#d4ff00] font-bold text-lg mt-0.5">•</span>
+                  <span className="leading-relaxed">Respuestas automáticas en español neutro</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Pricing Table */}
+          <div className="max-w-6xl mx-auto mt-32">
+            <div className="text-center mb-16">
+              <h3 className="text-4xl lg:text-5xl font-extrabold mb-6 text-white">
+                Planes para Trainers Élite Hispanos
+              </h3>
+              <p className="text-xl text-[#a89f8f]">
+                Elige el plan perfecto para tu negocio
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Starter Plan */}
+              <div className="group p-10 rounded-3xl bg-gradient-to-br from-[#2a5a4a]/90 via-[#234a3d]/95 to-[#1a3b2f]/90 border-2 border-[#e9e5dc]/20 shadow-[0_24px_60px_rgba(0,0,0,0.5)] hover:shadow-[0_32px_72px_rgba(237,101,49,0.3)] hover:scale-[1.02] hover:border-[#ed6531]/50 transition-all duration-500 backdrop-blur-sm relative overflow-hidden">
+                <div className="absolute top-0 right-0 px-4 py-1.5 bg-[#d4ff00] text-[#0f231c] text-xs font-bold rounded-bl-2xl">
+                  50% OFF
+                </div>
+                <div className="mb-6">
+                  <h4 className="text-3xl font-extrabold text-white mb-2">Starter</h4>
+                  <p className="text-[#a89f8f] text-sm">Para empezar tu negocio</p>
+                </div>
+                <div className="mb-8">
+                  <div className="flex items-baseline gap-2 mb-2">
+                    <span className="text-5xl font-extrabold text-white">350</span>
+                    <span className="text-xl text-[#e9e5dc]">MXN/mes</span>
+                  </div>
+                  <p className="text-[#ed6531] text-sm line-through">Precio normal: 700 MXN/mes</p>
+                  <p className="text-[#d4ff00] text-sm font-bold mt-1">Fundadores: 50% OFF primer año</p>
+                </div>
+                <div className="space-y-3 mb-8">
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#ed6531] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc] font-bold text-lg">1-15 clientes activos</span>
+                  </div>
+                  <div className="h-px bg-[#e9e5dc]/10 my-4"></div>
+                  <p className="text-[#a89f8f] text-sm font-semibold mb-3">Todas las funciones incluidas:</p>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">Asistente IA: agenda, cancela, check-ins</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">WhatsApp + Instagram + Email unificado</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">Calendario + gestión de waitlist</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">Perfiles: notas, fotos, gráficos custom</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">Programas PDF compartibles por link</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">Micro-sitio + testimonios automáticos</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">Pagos Mercado Pago + Stripe MX</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">Analíticos básicos de asistencia</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Pro Plan */}
+              <div className="group p-10 rounded-3xl bg-gradient-to-br from-[#2a5a4a]/90 via-[#234a3d]/95 to-[#1a3b2f]/90 border-2 border-[#ed6531]/50 shadow-[0_24px_60px_rgba(237,101,49,0.3)] hover:shadow-[0_32px_72px_rgba(237,101,49,0.4)] hover:scale-[1.02] transition-all duration-500 backdrop-blur-sm relative overflow-hidden">
+                <div className="absolute top-0 right-0 px-4 py-1.5 bg-gradient-to-r from-[#ed6531] to-[#ff7e4d] text-white text-xs font-bold rounded-bl-2xl">
+                  RECOMENDADO
+                </div>
+                <div className="mb-6">
+                  <h4 className="text-3xl font-extrabold text-white mb-2">Pro</h4>
+                  <p className="text-[#a89f8f] text-sm">Para escalar tu negocio</p>
+                </div>
+                <div className="mb-8">
+                  <div className="flex items-baseline gap-2 mb-2">
+                    <span className="text-5xl font-extrabold text-white">700</span>
+                    <span className="text-xl text-[#e9e5dc]">MXN/mes</span>
+                  </div>
+                  <p className="text-[#ed6531] text-sm line-through">Precio normal: 1,399 MXN/mes</p>
+                  <p className="text-[#d4ff00] text-sm font-bold mt-1">Fundadores: 50% OFF primer año</p>
+                </div>
+                <div className="space-y-3 mb-8">
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#ed6531] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc] font-bold text-lg">16-50 clientes activos</span>
+                  </div>
+                  <div className="h-px bg-[#e9e5dc]/10 my-4"></div>
+                  <p className="text-[#a89f8f] text-sm font-semibold mb-3">Todas las funciones incluidas:</p>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">Asistente IA: agenda, cancela, check-ins</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">WhatsApp + Instagram + Email unificado</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">Calendario + gestión de waitlist</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">Perfiles: notas, fotos, gráficos custom</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">Programas PDF compartibles por link</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">Micro-sitio + testimonios automáticos</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">Pagos Mercado Pago + Stripe MX</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#e9e5dc]">Analíticos básicos de asistencia</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <div className="max-w-3xl mx-auto mb-8">
+                <div className="p-8 rounded-3xl bg-gradient-to-br from-[#ed6531]/10 via-[#ff7e4d]/5 to-[#d4ff00]/10 border-2 border-[#ed6531]/30 backdrop-blur-sm">
+                  <h4 className="text-2xl font-extrabold text-white mb-4">🎯 Pre-Venta de Acceso Anticipado</h4>
+                  <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 bg-white/5 border border-white/10 rounded-full">
+                    <div className="w-2 h-2 bg-[#d4ff00] rounded-full animate-pulse"></div>
+                    <span className="text-[#e9e5dc] text-xs font-semibold">Producto en desarrollo • Acceso temprano garantizado</span>
+                  </div>
+                  <p className="text-[#e9e5dc] text-lg mb-6 leading-relaxed">
+                    <span className="text-[#d4ff00] font-bold">Paga solo tu primer mes por adelantado</span> (350 o 700 MXN) y asegura tu <span className="text-white font-bold">50% OFF durante todo tu primer año</span>
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 text-left">
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <div>
+                        <p className="text-white font-semibold">Starter: 350 MXN hoy</p>
+                        <p className="text-[#a89f8f] text-sm">12 meses a mitad de precio</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#4caf50] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <div>
+                        <p className="text-white font-semibold">Pro: 700 MXN hoy</p>
+                        <p className="text-[#a89f8f] text-sm">12 meses a mitad de precio</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <WaitlistForm variant="pricing" />
+
+                  <p className="text-[#a89f8f] text-sm mt-4">
+                    💳 Después del primer año, pagas el precio regular mensual
+                  </p>
+                </div>
+              </div>
+
+              <div className="inline-flex items-center gap-2 px-6 py-3 bg-[#4caf50]/10 border border-[#4caf50]/30 rounded-full">
+                <svg className="w-5 h-5 text-[#4caf50]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-white text-sm font-semibold">Funciona 100% en México: Mercado Pago, Stripe MX, WhatsApp Business API local</span>
+              </div>
             </div>
           </div>
         </div>
@@ -635,38 +898,38 @@ export default function Home() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-24">
             <div className="inline-block mb-4 px-4 py-1.5 bg-gradient-to-r from-[#ed6531]/10 to-[#d4ff00]/10 border border-[#ed6531]/20 rounded-full backdrop-blur-sm">
-              <span className="text-xs font-bold tracking-widest text-[#d4ff00] uppercase">Círculo de Élite</span>
+              <span className="text-xs font-bold tracking-widest text-[#d4ff00] uppercase">Lo Que Los Trainers Piensan</span>
             </div>
-            <h2 className="text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">
+            <h2 className="text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight leading-tight">
               <span className="bg-gradient-to-r from-[#e9e5dc] via-white to-[#e9e5dc] bg-clip-text text-transparent">
-                Profesionales Que No
+                Por Qué Los Trainers
               </span>
               <br />
               <span className="bg-gradient-to-r from-[#ed6531] to-[#d4ff00] bg-clip-text text-transparent">
-                Aceptan Mediocridad
+                Están Emocionados
               </span>
             </h2>
             <p className="text-xl text-[#a89f8f] leading-relaxed max-w-2xl mx-auto">
-              Entrenadores que facturan +$15K/mes ya transformaron su negocio
+              Trainers mexicanos validando por qué esta solución es exactamente lo que necesitan.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                quote: "Después de invertir en 7 herramientas diferentes, FitSalmon es la primera que realmente comprende cómo trabajan los profesionales serios. Vale cada centavo.",
-                author: "Carlos Mendoza",
-                role: "$18K/mes • Propietario de Estudio Boutique"
+                quote: "Esto es exactamente lo que necesito. Pierdo clientes porque no tengo un sistema profesional. Que sea todo-en-uno y a precio accesible es perfecto.",
+                author: "Toño Mendoza",
+                role: "Running Coach, CDMX"
               },
               {
-                quote: "Mi ROI se pagó en 3 semanas. El bot de IA convierte más prospectos que mi asistente humano anterior. Esto es ingeniería de verdad.",
-                author: "Ana Rodríguez",
-                role: "$22K/mes • Especialista en Alto Rendimiento"
+                quote: "He probado Trainerize y TrueCoach, pero son caros y en dólares. Una herramienta así, con whatsapp tiene mucho sentido.",
+                author: "Ale Fuentes",
+                role: "Crossfit Coach, CDMX"
               },
               {
-                quote: "He usado todo—desde Trainerize hasta Mindbody. FitSalmon está en otra liga. Es la diferencia entre un Casio y un Rolex.",
+                quote: "El problema real es que pierdo tiempo administrando whatsapp y calendario, quiero que el sistema se encargue de eso.",
                 author: "Miguel Torres",
-                role: "$35K/mes • Coach de Celebridades"
+                role: "Entrenador en Gimnasio, CDMX"
               }
             ].map((testimonial, idx) => (
               <div key={idx} className="group p-10 rounded-3xl bg-gradient-to-br from-[#2a5a4a]/70 via-[#234a3d]/80 to-[#1a3b2f]/70 border border-[#e9e5dc]/15 shadow-[0_16px_40px_rgba(0,0,0,0.35),inset_0_1px_0_rgba(255,255,255,0.05)] hover:shadow-[0_24px_56px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.1)] hover:scale-[1.02] hover:border-[#e9e5dc]/25 transition-all duration-500 backdrop-blur-sm">
@@ -704,32 +967,37 @@ export default function Home() {
 
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-block mb-6 px-5 py-2 bg-white/15 border border-white/25 rounded-full backdrop-blur-md">
-            <span className="text-sm font-bold tracking-wider text-white uppercase">Solo 28 Plazas Restantes • Cierra 31 Diciembre</span>
+            <span className="text-sm font-bold tracking-wider text-white uppercase">🚀 Pre-Lanzamiento • Solo 89 Plazas Fundadoras • Cierra 31 Dic</span>
           </div>
 
           <h2 className="text-6xl lg:text-7xl font-extrabold mb-10 text-white tracking-tight leading-[1.1] drop-shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
-            El Momento Definitivo
+            El Momento de Decidir:
             <br />
-            Para Decidir
+            Estancarme o Empezar a Crecer
           </h2>
 
           <p className="text-2xl lg:text-3xl text-white/95 mb-6 leading-relaxed font-light max-w-3xl mx-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.2)]">
-            <span className="font-bold text-white">72 profesionales de élite</span> ya aseguraron su membresía fundadora.
+            <span className="font-bold text-white">11 trainers élite</span> ya aseguraron su 50% OFF.
           </p>
 
-          <p className="text-xl text-white/80 mb-14 leading-relaxed max-w-3xl mx-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.2)]">
-            Cuando cerramos la lista de espera, el precio base será <span className="line-through text-white/60">$297/mes</span>. Los miembros fundadores pagan solo <span className="text-[#d4ff00] font-bold">$147/mes de por vida</span>.
-          </p>
+          <div className="mb-10 text-white/90 max-w-2xl mx-auto">
+            <p className="text-xl mb-4">
+              <span className="font-bold text-white">Precio normal:</span> Starter 700 MXN • Pro 1,399 MXN (IVA incl.)
+            </p>
+            <p className="text-2xl font-bold text-[#d4ff00]">
+              Fundadores: 350 MXN / 700 MXN primer año (paga solo 1er mes)
+            </p>
+          </div>
 
           <WaitlistForm variant="cta" />
 
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
             <div className="inline-flex items-center gap-3 px-6 py-3 bg-white/10 border border-white/20 rounded-full backdrop-blur-md">
               <svg className="w-5 h-5 text-[#d4ff00]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
               <p className="text-white font-medium text-sm">
-                50% OFF de por vida
+                50% OFF primer año
               </p>
             </div>
             <div className="inline-flex items-center gap-3 px-6 py-3 bg-white/10 border border-white/20 rounded-full backdrop-blur-md">
@@ -737,10 +1005,19 @@ export default function Home() {
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
               <p className="text-white font-medium text-sm">
-                Acceso prioritario al lanzamiento
+                Grupo de fundadores
+              </p>
+            </div>
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-white/10 border border-white/20 rounded-full backdrop-blur-md">
+              <svg className="w-5 h-5 text-[#d4ff00]" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <p className="text-white font-medium text-sm">
+                Migración en 15 min
               </p>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -772,16 +1049,23 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-[#e9e5dc] mb-4">Legal</h4>
               <ul className="space-y-2 text-[#a89f8f]">
-                <li><a href="#privacy" className="hover:text-[#d4ff00] transition-colors">Política de Privacidad</a></li>
-                <li><a href="#terms" className="hover:text-[#d4ff00] transition-colors">Términos de Servicio</a></li>
+                <li><Link href="/privacy" className="hover:text-[#d4ff00] transition-colors">Política de Privacidad</Link></li>
+                <li><Link href="/terms" className="hover:text-[#d4ff00] transition-colors">Términos de Servicio</Link></li>
               </ul>
             </div>
           </div>
 
           <div className="pt-8 border-t border-[#e9e5dc]/10 flex flex-col md:flex-row items-center justify-between gap-6">
-            <p className="text-[#a89f8f] text-sm">
-              © 2025 FitSalmon. Todos los derechos reservados.
-            </p>
+            <div className="flex flex-col md:flex-row items-center gap-3">
+              <p className="text-[#a89f8f] text-sm">
+                © 2025 FitSalmon. Todos los derechos reservados.
+              </p>
+              <div className="hidden md:block w-1 h-1 rounded-full bg-[#a89f8f]/50"></div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#d4ff00]/5 border border-[#d4ff00]/20 rounded-md">
+                <div className="w-1.5 h-1.5 bg-[#d4ff00] rounded-full animate-pulse"></div>
+                <span className="text-[#a89f8f] text-xs font-medium">Producto en desarrollo</span>
+              </div>
+            </div>
             <div className="flex items-center gap-6">
               <a href="https://twitter.com/fitsalmon" target="_blank" rel="noopener noreferrer" className="text-[#a89f8f] hover:text-[#d4ff00] transition-colors">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -791,11 +1075,6 @@ export default function Home() {
               <a href="https://instagram.com/fitsalmon" target="_blank" rel="noopener noreferrer" className="text-[#a89f8f] hover:text-[#d4ff00] transition-colors">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                </svg>
-              </a>
-              <a href="https://linkedin.com/company/fitsalmon" target="_blank" rel="noopener noreferrer" className="text-[#a89f8f] hover:text-[#d4ff00] transition-colors">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
               </a>
             </div>
