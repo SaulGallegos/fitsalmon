@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 
 const lato = Lato({
   weight: ["300", "400", "700", "900"],
@@ -82,7 +83,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <Analytics />
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -92,7 +92,21 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/images/profile.png" />
       </head>
       <body className={`${lato.variable} antialiased`} suppressHydrationWarning>
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-FZK27WD7PC"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FZK27WD7PC');
+          `}
+        </Script>
         {children}
+        <Analytics />
       </body>
     </html>
   );
