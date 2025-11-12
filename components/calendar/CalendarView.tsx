@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight, Plus } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Plus, Calendar, CalendarCheck } from 'lucide-react';
 
 interface Session {
     id: string;
@@ -16,6 +16,8 @@ export default function CalendarView() {
     const [currentWeek, setCurrentWeek] = useState(0);
     const [currentDay, setCurrentDay] = useState(0); // For mobile single-day view
     const [showAddModal, setShowAddModal] = useState(false);
+    const [googleCalendarConnected, setGoogleCalendarConnected] = useState(false);
+    const [calendlyConnected, setCalendlyConnected] = useState(false);
 
     const hours = Array.from({ length: 14 }, (_, i) => i + 6); // 6 AM to 8 PM
     const days = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'];
@@ -279,14 +281,55 @@ export default function CalendarView() {
                         <h1 className="text-xl md:text-2xl font-black mb-1 text-[var(--text-primary)] bg-gradient-to-r from-[var(--text-primary)] to-[var(--accent)] bg-clip-text">Calendario</h1>
                         <p className="text-xs text-[var(--text-secondary)] font-semibold hidden sm:block">Gestiona tus sesiones de entrenamiento</p>
                     </div>
-                    <button
-                        onClick={() => setShowAddModal(true)}
-                        className="flex items-center gap-1 md:gap-2 px-3 md:px-5 py-2 md:py-2.5 bg-gradient-to-r from-[var(--primary)] to-[var(--primary-hover)] hover:from-[var(--primary-hover)] hover:to-[var(--primary-light)] text-white rounded-full font-black shadow-[var(--shadow-glow)] hover:shadow-[var(--shadow-glow-strong)] transition-all duration-400 hover:scale-105 active:scale-95 text-xs md:text-sm"
-                    >
-                        <Plus size={16} strokeWidth={3} className="md:w-[18px] md:h-[18px]" />
-                        <span className="hidden sm:inline">Agregar Sesión</span>
-                        <span className="sm:hidden">Agregar</span>
-                    </button>
+                    <div className="flex items-center gap-2 md:gap-3">
+                        {/* Integration Buttons */}
+                        <div className="flex items-center gap-2">
+                            <button
+                                onClick={() => {
+                                    setGoogleCalendarConnected(!googleCalendarConnected);
+                                    if (!googleCalendarConnected) {
+                                        // Simulate integration
+                                        setTimeout(() => {
+                                            alert('Google Calendar conectado exitosamente');
+                                        }, 300);
+                                    }
+                                }}
+                                className={`flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 md:py-2.5 rounded-full font-black text-xs md:text-sm transition-all duration-400 hover:scale-105 active:scale-95 ${googleCalendarConnected
+                                        ? 'bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white shadow-[var(--shadow-glow)]'
+                                        : 'border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white hover:shadow-[var(--shadow-glow)]'
+                                    }`}
+                            >
+                                <Calendar size={14} strokeWidth={2.5} className="md:w-[16px] md:h-[16px]" />
+                                <span className="hidden sm:inline">Google</span>
+                            </button>
+                            <button
+                                onClick={() => {
+                                    setCalendlyConnected(!calendlyConnected);
+                                    if (!calendlyConnected) {
+                                        // Simulate integration
+                                        setTimeout(() => {
+                                            alert('Calendly conectado exitosamente');
+                                        }, 300);
+                                    }
+                                }}
+                                className={`flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 md:py-2.5 rounded-full font-black text-xs md:text-sm transition-all duration-400 hover:scale-105 active:scale-95 ${calendlyConnected
+                                        ? 'bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 hover:to-purple-400 text-white shadow-[var(--shadow-glow)]'
+                                        : 'border-2 border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white hover:shadow-[var(--shadow-glow)]'
+                                    }`}
+                            >
+                                <CalendarCheck size={14} strokeWidth={2.5} className="md:w-[16px] md:h-[16px]" />
+                                <span className="hidden sm:inline">Calendly</span>
+                            </button>
+                        </div>
+                        <button
+                            onClick={() => setShowAddModal(true)}
+                            className="flex items-center gap-1 md:gap-2 px-3 md:px-5 py-2 md:py-2.5 bg-gradient-to-r from-[var(--primary)] to-[var(--primary-hover)] hover:from-[var(--primary-hover)] hover:to-[var(--primary-light)] text-white rounded-full font-black shadow-[var(--shadow-glow)] hover:shadow-[var(--shadow-glow-strong)] transition-all duration-400 hover:scale-105 active:scale-95 text-xs md:text-sm"
+                        >
+                            <Plus size={16} strokeWidth={3} className="md:w-[18px] md:h-[18px]" />
+                            <span className="hidden sm:inline">Agregar Sesión</span>
+                            <span className="sm:hidden">Agregar</span>
+                        </button>
+                    </div>
                 </div>
 
                 {/* Week Navigation - Desktop */}
