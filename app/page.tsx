@@ -5,7 +5,7 @@ import WaitlistForm from '@/components/WaitlistForm';
 
 export const metadata: Metadata = {
   title: 'FitSalmon - Bot WhatsApp IA para Entrenadores Personales México | Desde 350 MXN/mes',
-  description: 'Software premium con IA que usan trainers élite hispanos. Automatiza agenda, WhatsApp, cobros y clientes. 84 trainers aseguraron su 50% OFF de por vida. Solo 16 plazas fundadoras restantes. Desde 350 MXN/mes.',
+  description: 'Software premium con IA exclusivo para entrenadores personales. Automatiza agenda, WhatsApp, cobros y clientes. Tus clientes NO necesitan apps ni cuentas - siguen usando WhatsApp normalmente. 84 trainers aseguraron su 50% OFF. Solo 16 plazas fundadoras restantes. Desde 350 MXN/mes.',
   keywords: 'bot whatsapp para entrenadores personales, automatizar agenda entrenadores personales, asistente virtual fitness méxico, software gestión clientes trainer cdmx, plataforma élite entrenadores personales, cómo facturar más de 10k usd como trainer, micro sitio web para entrenadores personales, CRM entrenadores personales méxico, automatización fitness méxico, software trainers guadalajara',
   authors: [{ name: 'FitSalmon' }],
   creator: 'FitSalmon',
@@ -219,13 +219,21 @@ export default function Home() {
               Deja de perder 20 horas/semana en WhatsApp caos, agendas rotas y cobros manuales. FitSalmon es la <span className="text-[#e9e5dc] font-semibold">automatización élite a precio inigualable.</span>
             </p>
 
-            <div className="mb-10 inline-flex items-center gap-3 px-6 py-3 bg-[#ed6531]/10 border border-[#ed6531]/30 rounded-full backdrop-blur-sm">
-              <svg className="w-5 h-5 text-[#ed6531]" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-              </svg>
-              <p className="text-white font-bold text-sm">
-                Primer mes por adelantado para aprovechar el 50% OFF por tu primer año
-              </p>
+            {/* Client Clarification Banner */}
+            <div className="mb-10 inline-flex flex-col sm:flex-row items-center gap-4 px-8 py-5 bg-gradient-to-r from-[#4caf50]/15 via-[#d4ff00]/10 to-[#4caf50]/15 border-2 border-[#4caf50]/40 rounded-2xl backdrop-blur-sm max-w-4xl mx-auto">
+              <div className="flex items-center gap-3">
+                <svg className="w-8 h-8 text-[#4caf50] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                <div>
+                  <p className="text-white font-bold text-lg leading-tight">
+                    Cero Fricción para Tus Clientes
+                  </p>
+                  <p className="text-[#e9e5dc] text-sm mt-1">
+                    Ellos siguen usando <span className="text-[#d4ff00] font-semibold">WhatsApp como siempre</span> - sin apps, sin cuentas, sin complicaciones
+                  </p>
+                </div>
+              </div>
             </div>
 
             <WaitlistForm variant="hero" />
@@ -472,6 +480,29 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Experience Section */}
+      <section className="py-24 px-6 lg:px-12 bg-gradient-to-b from-[#0f231c] via-[#1a3b2f] to-[#0f231c] relative overflow-hidden">
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-block mb-4 px-4 py-1.5 bg-gradient-to-r from-[#4caf50]/10 to-[#d4ff00]/10 border border-[#4caf50]/20 rounded-full backdrop-blur-sm">
+              <span className="text-xs font-bold tracking-widest text-[#4caf50] uppercase">Experiencia Sin Fricción para Tus Clientes</span>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-extrabold mb-6 tracking-tight leading-tight">
+              <span className="bg-gradient-to-r from-[#e9e5dc] via-white to-[#e9e5dc] bg-clip-text text-transparent">
+                La Ventaja de Cero Fricción
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-[#4caf50] to-[#d4ff00] bg-clip-text text-transparent">
+                Tus Clientes Ya Tienen Todo Lo Que Necesitan
+              </span>
+            </h2>
+            <p className="text-xl text-[#a89f8f] max-w-3xl mx-auto leading-relaxed">
+              Mientras otros piden descargas complicadas, tus clientes usan WhatsApp que ya tienen. Adopción instantánea, experiencia premium.
+            </p>
           </div>
         </div>
       </section>
